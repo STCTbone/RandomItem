@@ -8,5 +8,13 @@
 
 import Foundation
 
-println("Hello, World!")
+var items:Item[] = []
+for index in 1...10 {
+    items += Item(randomItem: true)
+}
 
+
+
+for item in items {
+    NSLog("%@", item)
+}
